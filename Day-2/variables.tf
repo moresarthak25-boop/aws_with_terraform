@@ -1,13 +1,13 @@
-variable "ami_id" {
+variable "instance_ami_id" {
     type = string 
     default = "ami-01a00762f46d584a1"
 
 }
 
-
 variable "subnet_id" {
     type = string
-    default = "subnet-03d3b0682e0fff0fc"
+    # default = "subnet-0c3c23730218354a8"
+    default = "subnet-0147f31652d7b53e0"
 }
 
 variable "instance_type" {
@@ -15,10 +15,15 @@ variable "instance_type" {
     default = "t3.micro"
 }
 
-variable "instance_count" {
-    type = number
-    default = 1
+variable "environment" {
+    type = string
+    default = "dev"
 }
+
+#variable "instance_count" {
+ #   type = number
+  #  default = 1
+#}
 variable "public_ip" {
     type = bool
     default = true
