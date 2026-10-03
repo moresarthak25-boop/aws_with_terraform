@@ -5,3 +5,21 @@ Day-2/.terraform.lock.hcl
 Day-3/.terraform.lock.hcl
 C:\Users\Sarthak\aws_with_terraform\Day-2\.terraform
 C:\Users\Sarthak\aws_with_terraform\Day-2\.terraform.lock.hcl
+
+
+#variable "instance_count" {
+ #   type = number
+  #  default = 1
+# } 
+
+
+
+
+
+
+
+#variable "public_ip" {
+   # type = bool
+   # default = true
+   # description = "this for public ip"
+# }
