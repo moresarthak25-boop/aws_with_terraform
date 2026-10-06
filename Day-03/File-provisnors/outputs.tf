@@ -20,6 +20,6 @@ output "private_dns" {
 
 output "instance_id" {
   description = "this is for the aws  ec2 instance  instance id"
-  value       = aws_instance.web-app
+   value       = aws_instance.web-app
 }
 
