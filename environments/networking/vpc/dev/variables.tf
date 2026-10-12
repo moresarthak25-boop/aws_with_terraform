@@ -27,3 +27,22 @@ variable "public_subnet_01_cidr" {
 variable "public_subnet_01_availability_zone" {
     type = string
 }
+
+variable "eip_name" {
+    type = string 
+}
+
+variable "public_subnet_02_cidr" {
+    type = string
+}
+
+variable "public_subnet_02_availability_zone" {
+    type = string
+}
+
+variable "public_subnet_03_cidr" {
+      type = string
+}
+variable "public_subnet_03_availability_zone" {
+      type = string
+}
