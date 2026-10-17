@@ -8,3 +8,6 @@ C:\Users\Sarthak\aws_with_terraform\Day-2\.terraform.lock.hcl
 C:\Users\Sarthak\aws_with_terraform\environments\networking\vpc\dev\.terraform\*
 C:\Users\Sarthak\aws_with_terraform\environments\networking\vpc\dev\.terraform.lock.hcl
 C:\Users\Sarthak\aws_with_terraform\environments\security\security-groups\dev\.terraform
+C:\Users\Sarthak\aws_with_terraform\environments\DNS\.terraform
+environments/DNS/.terraform.lock.hcl
+environments/security/acm/.terraform.lock.hcl
