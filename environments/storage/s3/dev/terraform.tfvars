@@ -1,5 +1,11 @@
- bucket_name = "dev-fct"
- environment = "dev"
- aws_region = "ap-south-1"
- aws_s3_bucket_versioning = "Enabled"
- aws_s3_bucket_acl = "public-read"
+aws_region = "ap-south-1"
+
+environment = "dev"
+
+project_name = "production-eks-devops-platform"
+
+bucket_name = "production-dev-bucket-2-fct"
+
+frontend_domain = "dev.sarthak.store"
+
+hosted_zone_name = "sarthak.store"

@@ -70,3 +70,13 @@ variable "public_subnet_03_cidr" {
 variable "public_subnet_03_availability_zone" {
   type = string
 }
+
+variable "prod_vpc_id" {
+  type = string
+  default = "vpc-00798c7fab2d7dddb"
+}
+
+variable "dev_vpc_id" {
+  type = string
+  default = "vpc-0797056f6a01b1b07"
+}

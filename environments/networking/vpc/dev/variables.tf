@@ -71,3 +71,8 @@ variable "public_subnet_03_cidr" {
 variable "public_subnet_03_availability_zone" {
   type = string
 }
+
+
+#variable "prod_vpc_id" {
+ # type = string
+#}
