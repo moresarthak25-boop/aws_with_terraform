@@ -1,19 +1,17 @@
 variable "aws_region" {
-    type = string
-}
-
-variable "environment" {
-    type = string
+  default = "ap-south-1"
 }
 
 variable "bucket_name" {
-    type = string
+  type = string
 }
 
-variable "aws_s3_bucket_versioning" {
-    type = string
+variable "environment" {
+  type    = string
+  default = "dev"
 }
 
-variable "aws_s3_bucket_acl" {
-    type = string
+variable "tags" {
+  type    = map(string)
+  default = {}
 }

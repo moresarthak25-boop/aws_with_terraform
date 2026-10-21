@@ -1,19 +1,11 @@
-variable "aws_region" {
-    type = string
-}
+variable "aws_region" {}
 
-variable "environment" {
-    type = string
-}
+variable "environment" {}
 
-variable "bucket_name" {
-    type = string
-}
+variable "project_name" {}
 
-variable "aws_s3_bucket_versioning" {
-    type = string
-}
+variable "bucket_name" {}
 
-variable "aws_s3_bucket_acl" {
-    type = string
-}
+variable "frontend_domain" {}
+
+variable "hosted_zone_name" {}
