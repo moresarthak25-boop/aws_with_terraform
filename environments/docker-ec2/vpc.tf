@@ -12,7 +12,7 @@ resource "aws_vpc" "main" {
 
   tags = {
 
-    Name = "docker-demo-vpc"
+    Name = "docker-demo-vpc-2"
   }
 }
 

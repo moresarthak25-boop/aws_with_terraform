@@ -33,9 +33,9 @@ output "private_route_table_ids" {
   value = module.route_tables.private_route_table_ids
 }
 
-#output "alb_sg_id" {
-
- #}
+output "alb_sg_id" {
+  value = module.security_groups.alb_security_group_id
+}
 
 #output "eks_cluster_sg_id" {
 
@@ -51,3 +51,21 @@ output "private_route_table_ids" {
 
  # value = module.security_groups.bastion_sg_id
 #}
+
+#################################################
+# ALB SG
+#################################################
+
+output "alb_security_group_id" {
+
+  value = module.security_groups.alb_security_group_id
+}
+
+#################################################
+# EC2 SG
+#################################################
+
+output "ec2_security_group_id" {
+
+  value = module.security_groups.ec2_security_group_id
+}
