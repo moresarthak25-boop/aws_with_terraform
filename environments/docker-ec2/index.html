@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to FCTP Docker</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #075985, #06b6d4);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 25px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #bae6fd;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .welcome-card {
+            max-width: 750px;
+            width: 100%;
+            padding: 50px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+        }
+
+        .docker-icon {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-card h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-card h2 span {
+            color: #67e8f9;
+        }
+
+        .welcome-card p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0f2fe;
+        }
+
+        .message {
+            margin-top: 25px;
+            padding: 18px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #a5f3fc;
+            overflow-wrap: anywhere;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #0891b2;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            color: #bae6fd;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .welcome-card {
+                padding: 35px 20px;
+            }
+
+            .welcome-card h2 {
+                font-size: 1.8rem;
+            }
+
+            .welcome-card p {
+                font-size: 1rem;
+            }
+
+            .message {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐳 FCTP Docker</h1>
+        <p>Learn • Build • Deploy</p>
+    </header>
+
+    <main>
+        <section class="welcome-card">
+            <div class="docker-icon">🐳</div>
+
+            <h2>Welcome to <span>FCTP Docker</span></h2>
+
+            <p>
+                Welcome to the Docker Demo Session!
+                Explore containerization and learn how Docker
+                makes application deployment simple and efficient.
+            </p>
+
+            <div class="message">
+                Hello from Docker Volume Demo Session
+            </div>
+
+            <div class="tag">
+                Docker Volume Demo
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 FCTP Docker Demo | Powered by Docker
+    </footer>
+
+</body>
+</html>
