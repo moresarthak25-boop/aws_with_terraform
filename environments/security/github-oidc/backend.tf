@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+
+    bucket = "terraform-s3-bucket-02-sarthak" # this must be your s3 bucket name
+    key    = "security/fctp/dev/oidc/terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
