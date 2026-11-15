@@ -1,12 +1,12 @@
 name: DAG needs Block pipeline to run dependent jobs
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+
 jobs:
   job-1:
     runs-on: ubuntu-22.04
+
     steps:
       - run: echo "This job-1 will execute successfully first"
 
@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-22.04
     needs:
       - job-1
+
     steps:
       - run: echo "This job-2 will execute only after job-1 succeeds"
 
@@ -22,5 +23,6 @@ jobs:
     needs:
       - job-1
       - job-2
+      
     steps:
       - run: echo "This job-3 will execute only after job-1 and job-2 succeed"
