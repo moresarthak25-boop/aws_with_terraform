@@ -1,0 +1,14 @@
+name: main branch push auto trigger pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello-inline-bash:
+    runs-on: windows-latest
+
+    steps:
+      - name: Print Message
+        run: echo "this pipeline will automatically get triggered"
