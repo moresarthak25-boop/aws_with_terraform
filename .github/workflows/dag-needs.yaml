@@ -1,8 +1,9 @@
 name: DAG needs Block pipeline to run dependent jobs
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches:
+      - main
 jobs:
   job-1:
     runs-on: ubuntu-22.04
