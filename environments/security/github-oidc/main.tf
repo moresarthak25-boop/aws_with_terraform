@@ -24,7 +24,6 @@ module "github_oidc_provider" {
 
   source = "../../../modules/security/github-oidc/github-oidc-provider"
 
-  aws_region = var.aws_region
   common_tags = local.common_tags
 
 }

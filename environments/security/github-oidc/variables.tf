@@ -3,18 +3,22 @@
 #############################################################
 
 variable "aws_region" {
-  type    = string
-  default = "ap-south-1"
-}
 
-variable "environment" {
   type = string
+
+  default = "ap-south-1"
+
 }
 
 #############################################################
 # ENVIRONMENT
 #############################################################
 
+variable "environment" {
+
+  type = string
+
+}
 
 #############################################################
 # PROJECT
@@ -36,42 +40,42 @@ variable "github_owner" {
 
 }
 
-output "terraform_repository" {
-  value = var.terraform_repository
+variable "terraform_repository" {
+
 }
 
-output "frontend_repository" {
-  value = var.frontend_repository
+variable "frontend_repository" {
+
 }
 
-output "backend_repository" {
-  value = var.backend_repository
+variable "backend_repository" {
+
 }
 
-output "github_branch" {
-  value = var.github_branch
+variable "github_branch" {
+
 }
 
-output "terraform_branch" {
-  value = var.terraform_branch
+variable "terraform_branch" {
+
 }
 
-output "frontend_branch" {
-  value = var.frontend_branch
+variable "frontend_branch" {
+
 }
 
-output "backend_branch" {
-  value = var.backend_branch
+variable "backend_branch" {
+
 }
 
 #############################################################
 # GITHUB ENVIRONMENT
 #############################################################
 
-output "github_environment" {
-  value = var.github_environment
-}
+variable "github_environment" {
 
-output "project_name" {
-  value = var.project_name
+  description = "GitHub Environment Name"
+
+  type = string
+
 }

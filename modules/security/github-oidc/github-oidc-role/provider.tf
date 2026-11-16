@@ -1,13 +1,9 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
-    }
-  }
-}
+#############################################################
+# NOTE
+#############################################################
 
-# Configure the AWS Provider
-provider "aws" {
-  region = var.aws_region
-}
+# Provider configuration is inherited from the calling
+# environment.
+#
+# Do NOT configure provider "aws" inside reusable modules.
+#

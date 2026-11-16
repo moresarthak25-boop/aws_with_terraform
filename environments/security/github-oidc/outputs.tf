@@ -1,75 +1,39 @@
 #############################################################
-# AWS
+# OIDC
 #############################################################
 
-output "aws_region" {
-  value = var.aws_region
-}
+output "oidc_provider_arn" {
 
-#############################################################
-# ENVIRONMENT
-#############################################################
-
-output "environment" {
-  value = var.environment
-}
-
-#############################################################
-# PROJECT
-#############################################################
-
-variable "project" {
-
-  type = string
+  value = module.github_oidc_provider.oidc_provider_arn
 
 }
 
 #############################################################
-# GITHUB OWNER
+# TERRAFORM
 #############################################################
 
-variable "github" {
+output "terraform_role_arn" {
 
-  type = string
-
-}
-
-variable "terraform_repository" {
-
-}
-
-variable "frontend_repository" {
-
-}
-
-variable "backend_repository" {
-
-}
-
-variable "github_branch" {
-
-}
-
-variable "terraform_branch" {
-
-}
-
-variable "frontend_branch" {
-
-}
-
-variable "backend_branch" {
+  value = module.terraform_role.role_arn
 
 }
 
 #############################################################
-# GITHUB ENVIRONMENT
+# FRONTEND
 #############################################################
 
-variable "github_environment" {
+output "frontend_role_arn" {
 
-  description = "GitHub Environment Name"
+  value = module.frontend_role.role_arn
 
-  type = string
+}
+
+#############################################################
+# BACKEND
+#############################################################
+
+output "backend_role_arn" {
+
+  value = module.backend_role.role_arn
 
 }

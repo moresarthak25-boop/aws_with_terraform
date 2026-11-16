@@ -43,7 +43,3 @@ variable "common_tags" {
   default = {}
 
 }
-
-variable "aws_region" {
-  type = string
-}

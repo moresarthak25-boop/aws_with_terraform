@@ -1,13 +1,12 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
-    }
-  }
-}
+#############################################################
+# NOTE
+#############################################################
 
-# Configure the AWS Provider
-provider "aws" {
-  region = var.aws_region
-}
+# This module inherits the AWS provider configuration
+# from the calling environment.
+#
+# Do not define:
+#
+# provider "aws" {}
+#
+# Provider configuration belongs in the environment.
