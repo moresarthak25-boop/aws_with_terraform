@@ -23,11 +23,6 @@ jobs:
     needs:
       - job-1
       - job-2
-      
-      
+
     steps:
-<<<<<<< HEAD
       - run: echo "This job-3 will execute only after job-1 and job-2 succeed"
-=======
-      - run: echo "This job-3 will execute only after job-1 and job-2 succeed"
->>>>>>> Day-07
