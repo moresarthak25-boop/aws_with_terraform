@@ -31,7 +31,6 @@ jobs:
       run:
         shell: bash
         working-directory: environments/network/vpc/dev
-        C:\Users\Sarthak\aws_with_terraform\environments\network\vpc\dev
 
     steps:
 
